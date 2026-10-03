@@ -3,7 +3,6 @@
 > **Autonomous Multi-Source Institutional Verification & Exception Sign-Off**  
 > *Machines do the matching. Humans only judge the exceptions. Every decision leaves an audit trail.*
 
-[![Ideathon Rank](https://img.shields.io/badge/NIMS%20Ideathon-Rank%20%231%20(8.6%2F10)-4f46e5.svg)](./MEETING_PACK.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-emerald.svg)](engine/)
 [![UI](https://img.shields.io/badge/Demo-Live%20Web%20App-indigo.svg)](https://yashjain329.github.io/VerifyGrid/)
