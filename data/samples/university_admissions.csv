@@ -1,0 +1,497 @@
+enrollment_number,student_full_name,registered_dob,enrolled_department,admission_quota,enrollment_status,admission_year,allotted_mentor
+NIMS-2024-0001,Ayaan Sharma,2003-10-09,BBA,OBC-NCL,Active,2024,Prof. Mehta
+NIMS-2024-0002,Aanya Gupta,2004-08-27,BCA,General,Active,2024,Prof. Iyer
+NIMS-2024-0003,Pranav Yadav,2004-06-01,B.Tech CSE,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0004,Kabir Iyer,2004-08-26,B.Com Hons,General,Active,2024,Prof. Reddy
+NIMS-2024-0005,Diya Chauhan,2003-06-09,BBA,SC,Active,2024,Prof. Gupta
+NIMS-2024-0006,Ishita Jain,2004-01-03,B.Sc Biotech,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0007,Sneha Rao,2003-05-08,BCA,General,Active,2024,Prof. Pandey
+NIMS-2024-0008,Avani Singh,2004-12-22,B.Tech AI&DS,General,Active,2024,Prof. Reddy
+NIMS-2024-0009,Sai Yadav,2003-04-14,BCA,SC,Active,2024,Prof. Sharma
+NIMS-2024-0010,Shaurya Pandey,2003-12-30,BBA,SC,Active,2024,Prof. Yadav
+NIMS-2024-0011,Aanya Yadav,2003-06-17,MBBS Pre-Med,ST,Active,2024,Prof. Chatterjee
+NIMS-2024-0012,Ananya Verma,2003-08-23,B.Tech CSE,SC,Active,2024,Prof. Patel
+NIMS-2024-0013,Arjun Singh,2004-08-03,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0014,Sneha Mehta,2003-09-29,B.Pharm,OBC-NCL,Active,2024,Prof. Mehta
+NIMS-2024-0015,Tanvi Trivedi,2004-01-06,BBA,OBC-NCL,Active,2024,Prof. Iyer
+NIMS-2024-0016,Vihaan Jain,2003-06-06,B.Pharm,ST,Active,2024,Prof. Patel
+NIMS-2024-0017,Ishita Chatterjee,2004-03-25,B.Com Hons,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0018,Aanya Chauhan,2004-10-18,B.Sc Biotech,General,Active,2024,Prof. Banerjee
+NIMS-2024-0019,Shaurya Iyer,2003-01-04,B.Com Hons,EWS,Active,2024,Prof. Mehta
+NIMS-2024-0020,Samarth Reddy,2004-09-15,BBA,OBC-NCL,Active,2024,Prof. Nair
+NIMS-2024-0021,Aanya Reddy,2003-01-01,B.Sc Biotech,ST,Active,2024,Prof. Pandey
+NIMS-2024-0022,Kavya Rathore,2003-09-03,B.Tech CSE,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0023,Pari Gupta,2004-06-29,B.Pharm,OBC-NCL,Active,2024,Prof. Yadav
+NIMS-2024-0024,Dhruva Reddy,2004-09-13,BCA,OBC-NCL,Active,2024,Prof. Nair
+NIMS-2024-0025,Anushka Pandey,2004-03-24,MBBS Pre-Med,General,Active,2024,Prof. Yadav
+NIMS-2024-0026,Arjun Mishra,2003-01-22,BBA,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0027,Arjun Verma,2003-08-23,B.Tech AI&DS,General,Active,2024,Prof. Chauhan
+NIMS-2024-0028,Saanvi Yadav,2003-10-13,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Pandey
+NIMS-2024-0029,A. Nair,2004-02-21,BBA,General,Active,2024,Prof. Yadav
+NIMS-2024-0030,Gauri Shukla,2004-02-25,MBBS Pre-Med,General,Active,2024,Prof. Verma
+NIMS-2024-0031,Anushka Mishra,2003-04-22,BBA,OBC-NCL,Active,2024,Prof. Singh
+NIMS-2024-0032,Krishna Shukla,2003-07-07,B.Com Hons,ST,Active,2024,Prof. Reddy
+NIMS-2024-0033,Puja Rao,2003-04-11,B.Tech CSE,EWS,Active,2024,Prof. Pandey
+NIMS-2024-0034,Aryan Patel,2004-02-21,MBBS Pre-Med,ST,Active,2024,Prof. Trivedi
+NIMS-2024-0035,Vihaan Patel,2004-01-24,B.Tech CSE,ST,Active,2024,Prof. Nair
+NIMS-2024-0036,Om Shukla,2004-12-14,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Iyer
+NIMS-2024-0037,Pranav Verma,2004-08-16,B.Tech CSE,SC,Active,2024,Prof. Verma
+NIMS-2024-0038,Tanvi Nair,2004-05-29,B.Pharm,General,Active,2024,Prof. Verma
+NIMS-2024-0039,Arjun Chatterjee,2003-03-11,BBA,ST,Active,2024,Prof. Mishra
+NIMS-2024-0040,Tanvi Chatterjee,2003-02-10,B.Tech AI&DS,ST,Active,2024,Prof. Jain
+NIMS-2024-0041,Pranav Mishra,2003-09-02,B.Com Hons,ST,Active,2024,Prof. Reddy
+NIMS-2024-0043,Aanya Singh,2004-06-02,B.Com Hons,OBC-NCL,Active,2024,Prof. Chauhan
+NIMS-2024-0044,Aryan Pandey,2003-10-19,B.Pharm,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0045,Myra Rathore,2004-11-10,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Banerjee
+NIMS-2024-0046,Reyansh Rao,2003-06-09,B.Com Hons,SC,Active,2024,Prof. Rao
+NIMS-2024-0047,Pranav Chauhan,2004-06-01,MBBS Pre-Med,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0048,Aditi Chauhan,2003-02-15,B.Tech CSE,SC,Active,2024,Prof. Patel
+NIMS-2024-0049,Shaurya Iyer,2004-07-18,BCA,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0050,Arjun Mehta,2004-07-12,B.Tech CSE,SC,Active,2024,Prof. Trivedi
+NIMS-2024-0051,Krishna Verma,2003-11-12,B.Sc Biotech,General,Active,2024,Prof. Pandey
+NIMS-2024-0052,Aryan Jain,2003-12-29,BCA,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0053,Shaurya Patel,2004-02-27,B.Tech CSE,OBC-NCL,Active,2024,Prof. Gupta
+NIMS-2024-0054,Aryan Chauhan,2003-06-13,B.Tech AI&DS,ST,Active,2024,Prof. Reddy
+NIMS-2024-0055,Kabir Singh,2004-04-16,B.Sc Biotech,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0056,Vivaan Singh,2004-02-13,B.Sc Biotech,SC,Active,2024,Prof. Trivedi
+NIMS-2024-0057,Gauri Reddy,2004-02-14,B.Sc Biotech,General,Active,2024,Prof. Yadav
+NIMS-2024-0058,A. Banerjee,2003-09-29,B.Tech CSE,General,Active,2024,Prof. Reddy
+NIMS-2024-0059,Ananya Shukla,2004-09-12,B.Tech AI&DS,ST,Active,2024,Prof. Trivedi
+NIMS-2024-0060,Adityaa Shukla,2003-01-02,BBA,SC,Active,2024,Prof. Pandey
+NIMS-2024-0061,Diya Chatterjee,2003-11-18,B.Tech AI&DS,SC,Active,2024,Prof. Pandey
+NIMS-2024-0062,Ananya Trivedi,2004-12-14,B.Com Hons,EWS,Active,2024,Prof. Nair
+NIMS-2024-0063,Rhea Trivedi,2004-11-24,B.Pharm,EWS,Active,2024,Prof. Nair
+NIMS-2024-0064,Myra Sharma,2003-11-08,B.Com Hons,OBC-NCL,Active,2024,Prof. Chatterjee
+NIMS-2024-0065,Sneha Iyer,2004-03-28,BBA,EWS,Active,2024,Prof. Sharma
+NIMS-2024-0066,Sai Rathore,2004-06-11,B.Sc Biotech,General,Active,2024,Prof. Reddy
+NIMS-2024-0067,Kabir Singh,2003-05-31,B.Tech CSE,General,Active,2024,Prof. Mehta
+NIMS-2024-0068,Khushi Gupta,2004-04-11,BCA,EWS,Active,2024,Prof. Iyer
+NIMS-2024-0069,Pari Trivedi,2003-09-07,B.Pharm,General,Active,2024,Prof. Patel
+NIMS-2024-0070,Kabir Patel,2004-12-13,MBBS Pre-Med,General,Active,2024,Prof. Yadav
+NIMS-2024-0071,Sneha Mehta,2004-04-20,B.Sc Biotech,ST,Active,2024,Prof. Gupta
+NIMS-2024-0072,Shaurya Nair,2004-04-05,B.Com Hons,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0073,Aryan Chauhan,2004-03-26,B.Tech AI&DS,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0074,Diya Mishra,2004-07-07,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Singh
+NIMS-2024-0075,Ishita Mehta,2004-12-24,BBA,General,Active,2024,Prof. Mehta
+NIMS-2024-0076,Diya Rao,2004-04-22,BCA,General,Active,2024,Prof. Patel
+NIMS-2024-0077,Ishita Banerjee,2004-12-13,B.Tech CSE,EWS,Suspended,2024,Prof. Patel
+NIMS-2024-0078,Arav Pandey,2003-11-02,BCA,ST,Active,2024,Prof. Pandey
+NIMS-2024-0079,Kabir Chauhan,2004-03-22,MBBS Pre-Med,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0080,Anushka Patel,2004-04-23,B.Pharm,EWS,Active,2024,Prof. Jain
+NIMS-2024-0081,Tanvi Banerjee,2004-11-09,B.Tech CSE,General,Active,2024,Prof. Yadav
+NIMS-2024-0082,Sneha Patel,2003-02-21,B.Com Hons,ST,Active,2024,Prof. Shukla
+NIMS-2024-0083,Sneha Mishra,2003-12-12,BCA,SC,Active,2024,Prof. Mishra
+NIMS-2024-0084,Sai Nair,2003-01-20,B.Tech CSE,SC,Active,2024,Prof. Jain
+NIMS-2024-0085,Aditya Sharma,2003-09-11,BBA,General,Active,2024,Prof. Nair
+NIMS-2024-0086,Krishna Nair,2004-11-16,B.Tech AI&DS,EWS,Active,2024,Prof. Nair
+NIMS-2024-0087,Dhruva Pandey,2003-06-21,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Nair
+NIMS-2024-0088,Tanvi Sharma,2003-10-17,BCA,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0089,Tanvi Yadav,2003-04-15,B.Com Hons,EWS,Active,2024,Prof. Patel
+NIMS-2024-0090,Gauri Rao,2004-03-14,B.Sc Biotech,General,Active,2024,Prof. Shukla
+NIMS-2024-0091,Riya Nair,2003-04-19,BCA,SC,Active,2024,Prof. Sharma
+NIMS-2024-0092,Aditi Patel,2004-06-18,B.Com Hons,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0093,Aditi Banerjee,2003-10-02,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0094,Pooja Yadav,2004-04-20,BCA,SC,Active,2024,Prof. Mehta
+NIMS-2024-0095,Ananya Patel,2004-05-14,BBA,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0096,Rudra Chatterjee,2004-12-19,B.Com Hons,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0097,Sai Yadav,2004-02-21,MBBS Pre-Med,EWS,Active,2024,Prof. Patel
+NIMS-2024-0098,Pari Iyer,2003-01-18,B.Tech AI&DS,SC,Active,2024,Prof. Mehta
+NIMS-2024-0099,Aryan Rathore,2004-11-10,B.Sc Biotech,ST,Active,2024,Prof. Reddy
+NIMS-2024-0100,Myra Mishra,2003-12-27,MBBS Pre-Med,SC,Active,2024,Prof. Verma
+NIMS-2024-0101,Kabir Jain,2003-07-17,B.Sc Biotech,General,Active,2024,Prof. Banerjee
+NIMS-2024-0102,Pranav Nair,2003-10-11,B.Com Hons,General,Active,2024,Prof. Mehta
+NIMS-2024-0103,Kabir Pandey,2003-07-03,B.Com Hons,General,Active,2024,Prof. Verma
+NIMS-2024-0104,Aditya Verma,2004-07-20,B.Com Hons,OBC-NCL,Active,2024,Prof. Patel
+NIMS-2024-0105,Arav Banerjee,2003-10-19,MBBS Pre-Med,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0106,Atharva Verma,2003-09-16,MBBS Pre-Med,General,Active,2024,Prof. Patel
+NIMS-2024-0107,Pari Gupta,2004-08-13,B.Tech CSE,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0109,Pooja Iyer,2003-11-01,BCA,SC,Active,2024,Prof. Trivedi
+NIMS-2024-0110,Pranav Singh,2003-09-28,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Chatterjee
+NIMS-2024-0111,Myra Gupta,2003-06-10,B.Tech CSE,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0112,Om Verma,2003-08-26,B.Com Hons,SC,Active,2024,Prof. Sharma
+NIMS-2024-0113,Kabir Chauhan,2004-10-02,BBA,ST,Active,2024,Prof. Rathore
+NIMS-2024-0114,Ishaan Chauhan,2003-05-26,B.Tech AI&DS,General,Active,2024,Prof. Gupta
+NIMS-2024-0115,Vanshika Banerjee,2003-10-23,MBBS Pre-Med,General,Active,2024,Prof. Singh
+NIMS-2024-0116,A. Chauhan,2004-05-27,MBBS Pre-Med,ST,Active,2024,Prof. Iyer
+NIMS-2024-0117,Aditi Mishra,2004-09-10,B.Com Hons,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0118,Avani Banerjee,2003-01-22,B.Com Hons,EWS,Active,2024,Prof. Nair
+NIMS-2024-0119,Meera Reddy,2004-10-29,MBBS Pre-Med,SC,Active,2024,Prof. Nair
+NIMS-2024-0120,Pari Gupta,2004-04-26,B.Sc Biotech,ST,Active,2024,Prof. Patel
+NIMS-2024-0121,Reyansh Patel,2003-12-04,BCA,ST,Active,2024,Prof. Yadav
+NIMS-2024-0122,Myra Verma,2004-04-10,B.Tech AI&DS,SC,Active,2024,Prof. Shukla
+NIMS-2024-0123,Ayaan Trivedi,2004-06-10,B.Tech CSE,EWS,Active,2024,Prof. Chatterjee
+NIMS-2024-0124,Vihaan Singh,2004-06-14,B.Sc Biotech,EWS,Active,2024,Prof. Mehta
+NIMS-2024-0125,Vihaan Singh,2003-10-01,B.Pharm,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0126,Ayaan Sharma,2004-10-07,BBA,OBC-NCL,Active,2024,Prof. Patel
+NIMS-2024-0127,Myra Shukla,2003-04-06,BBA,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0128,Ishaan Nair,2003-10-26,B.Com Hons,ST,Active,2024,Prof. Reddy
+NIMS-2024-0129,Aryan Iyer,2004-07-18,B.Pharm,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0130,Arjun Chauhan,2004-02-29,B.Sc Biotech,EWS,Active,2024,Prof. Patel
+NIMS-2024-0131,Om Rathore,2004-08-24,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Mishra
+NIMS-2024-0132,Gauri Mishra,2004-07-19,BCA,ST,Active,2024,Prof. Iyer
+NIMS-2024-0133,Aryan Banerjee,2004-01-28,BBA,ST,Active,2024,Prof. Chatterjee
+NIMS-2024-0134,Meera Trivedi,2004-01-31,B.Pharm,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0135,Saanvi Banerjee,2003-12-06,B.Tech AI&DS,ST,Active,2024,Prof. Gupta
+NIMS-2024-0136,Aarav Mehta,2004-02-24,B.Pharm,General,Active,2024,Prof. Yadav
+NIMS-2024-0137,Diya Chatterjee,2004-12-10,BCA,General,Active,2024,Prof. Trivedi
+NIMS-2024-0138,Ananya Nair,2004-07-08,B.Tech CSE,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0139,Om Yadav,2003-04-03,BCA,General,Active,2024,Prof. Mehta
+NIMS-2024-0140,Shaurya Rathore,2003-01-30,B.Tech CSE,SC,Active,2024,Prof. Jain
+NIMS-2024-0141,Gauri Pandey,2004-03-17,B.Pharm,OBC-NCL,Active,2024,Prof. Sharma
+NIMS-2024-0142,Shaurya Patel,2003-02-20,BCA,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0143,Tanvi Mehta,2003-08-26,MBBS Pre-Med,SC,Active,2024,Prof. Reddy
+NIMS-2024-0144,Arav Iyer,2003-10-22,B.Pharm,General,Active,2024,Prof. Shukla
+NIMS-2024-0145,T. Rathore,2004-10-16,BCA,SC,Active,2024,Prof. Mehta
+NIMS-2024-0146,Advik Trivedi,2004-05-09,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Chatterjee
+NIMS-2024-0147,Avani Rathore,2004-12-17,B.Com Hons,General,Active,2024,Prof. Jain
+NIMS-2024-0148,Aarav Banerjee,2004-12-03,B.Tech CSE,EWS,Active,2024,Prof. Patel
+NIMS-2024-0149,Kabir Chatterjee,2003-12-27,BBA,OBC-NCL,Active,2024,Prof. Nair
+NIMS-2024-0150,Reyansh Verma,2003-11-13,MBBS Pre-Med,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0151,Sai Rathore,2003-12-01,BCA,OBC-NCL,Active,2024,Prof. Chatterjee
+NIMS-2024-0152,Aanya Pandey,2004-06-27,B.Com Hons,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0153,Om Mishra,2003-04-28,MBBS Pre-Med,General,Active,2024,Prof. Rao
+NIMS-2024-0154,Anushka Rao,2004-01-10,B.Tech AI&DS,ST,Suspended,2024,Prof. Reddy
+NIMS-2024-0155,Aanya Jain,2004-04-10,B.Sc Biotech,SC,Active,2024,Prof. Jain
+NIMS-2024-0156,Reyansh Yadav,2004-04-27,B.Tech CSE,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0157,Arjun Iyer,2004-12-18,B.Com Hons,ST,Active,2024,Prof. Nair
+NIMS-2024-0158,Aditya Verma,2003-11-08,MBBS Pre-Med,General,Active,2024,Prof. Mehta
+NIMS-2024-0159,Aanya Mehta,2004-02-02,MBBS Pre-Med,SC,Active,2024,Prof. Chatterjee
+NIMS-2024-0160,Riya Jain,2004-05-16,BCA,SC,Active,2024,Prof. Rao
+NIMS-2024-0161,Pranav Iyer,2004-03-31,BBA,SC,Active,2024,Prof. Sharma
+NIMS-2024-0162,Aanya Pandey,2003-03-04,BCA,SC,Active,2024,Prof. Shukla
+NIMS-2024-0163,Sneha Gupta,2004-11-09,BBA,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0164,Diya Yadav,2003-05-09,BBA,General,Active,2024,Prof. Shukla
+NIMS-2024-0165,Kabir Mishra,2003-06-01,B.Tech CSE,SC,Active,2024,Prof. Pandey
+NIMS-2024-0166,Aanya Chauhan,2003-06-28,B.Tech AI&DS,General,Active,2024,Prof. Verma
+NIMS-2024-0167,Gauri Yadav,2004-08-25,B.Sc Biotech,General,Active,2024,Prof. Reddy
+NIMS-2024-0168,Vihaan Mehta,2004-03-07,B.Tech AI&DS,General,Active,2024,Prof. Shukla
+NIMS-2024-0169,Kavya Reddy,2004-08-30,B.Tech AI&DS,ST,Active,2024,Prof. Yadav
+NIMS-2024-0170,Sara Rathore,2004-04-14,B.Tech CSE,General,Active,2024,Prof. Nair
+NIMS-2024-0171,Aditi Jain,2004-05-17,MBBS Pre-Med,General,Active,2024,Prof. Trivedi
+NIMS-2024-0172,Vanshika Mehta,2003-03-09,B.Pharm,SC,Active,2024,Prof. Pandey
+NIMS-2024-0173,Vanshika Reddy,2003-10-29,MBBS Pre-Med,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0174,A. Rao,2003-08-09,BCA,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0175,Diya Iyer,2004-02-13,BCA,General,Active,2024,Prof. Jain
+NIMS-2024-0176,Ananya Chauhan,2004-01-19,B.Pharm,ST,Active,2024,Prof. Shukla
+NIMS-2024-0177,Sai Gupta,2004-03-18,B.Tech AI&DS,SC,Active,2024,Prof. Mehta
+NIMS-2024-0178,Tanvi Rao,2004-07-29,B.Sc Biotech,General,Active,2024,Prof. Chauhan
+NIMS-2024-0179,Aditi Verma,2003-10-22,B.Com Hons,SC,Active,2024,Prof. Nair
+NIMS-2024-0180,Ishaan Nair,2003-08-18,B.Tech AI&DS,SC,Active,2024,Prof. Yadav
+NIMS-2024-0181,Rudra Banerjee,2003-08-20,BCA,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0182,Vivaan Patel,2003-10-07,B.Com Hons,SC,Active,2024,Prof. Rathore
+NIMS-2024-0183,Atharva Mehta,2004-08-02,BCA,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0184,Sai Reddy,2003-08-09,BCA,ST,Active,2024,Prof. Rao
+NIMS-2024-0185,Shaurya Pandey,2003-11-16,B.Sc Biotech,EWS,Active,2024,Prof. Shukla
+NIMS-2024-0186,Ishaan Patel,2004-09-24,B.Tech CSE,General,Active,2024,Prof. Chauhan
+NIMS-2024-0187,Aditi Nair,2004-09-13,MBBS Pre-Med,ST,Active,2024,Prof. Singh
+NIMS-2024-0188,Saanvi Jain,2003-12-20,BCA,General,Active,2024,Prof. Sharma
+NIMS-2024-0189,Sara Rathore,2003-02-16,BBA,ST,Active,2024,Prof. Sharma
+NIMS-2024-0190,Pranav Rathore,2003-08-05,B.Pharm,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0191,Ayaan Sharma,2004-05-24,BCA,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0192,Aanya Yadav,2004-05-27,B.Sc Biotech,General,Active,2024,Prof. Jain
+NIMS-2024-0193,Aditi Sharma,2004-04-15,B.Tech AI&DS,SC,Active,2024,Prof. Reddy
+NIMS-2024-0194,Riya Rathore,2003-04-28,BCA,General,Active,2024,Prof. Sharma
+NIMS-2024-0196,Aryan Shukla,2004-08-26,BCA,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0197,Samarth Mishra,2003-08-15,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Singh
+NIMS-2024-0198,Sara Reddy,2003-07-18,B.Sc Biotech,SC,Active,2024,Prof. Mishra
+NIMS-2024-0199,Reyansh Mehta,2003-09-20,BBA,OBC-NCL,Active,2024,Prof. Shukla
+NIMS-2024-0200,Atharva Nair,2004-04-20,MBBS Pre-Med,EWS,Active,2024,Prof. Pandey
+NIMS-2024-0201,Ishaan Iyer,2003-03-11,MBBS Pre-Med,ST,Active,2024,Prof. Jain
+NIMS-2024-0202,Tanvi Verma,2003-12-27,B.Tech AI&DS,SC,Active,2024,Prof. Mehta
+NIMS-2024-0203,A. Verma,2004-01-13,B.Com Hons,General,Active,2024,Prof. Shukla
+NIMS-2024-0204,Sneha Banerjee,2004-07-21,B.Tech CSE,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0205,Vanshika Nair,2004-05-28,B.Pharm,General,Active,2024,Prof. Chauhan
+NIMS-2024-0206,Diya Gupta,2004-05-31,B.Pharm,General,Active,2024,Prof. Chauhan
+NIMS-2024-0207,Puja Reddy,2004-06-19,B.Pharm,SC,Active,2024,Prof. Rao
+NIMS-2024-0208,Ishita Shukla,2003-12-13,B.Tech CSE,SC,Active,2024,Prof. Shukla
+NIMS-2024-0209,Reyansh Rao,2004-11-25,BCA,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0210,Diya Gupta,2004-08-19,B.Pharm,SC,Active,2024,Prof. Pandey
+NIMS-2024-0211,Krishna Chatterjee,2004-12-26,B.Tech AI&DS,SC,Active,2024,Prof. Chatterjee
+NIMS-2024-0212,Krishna Reddy,2003-04-06,BCA,EWS,Active,2024,Prof. Chauhan
+NIMS-2024-0213,Kavya Rathore,2003-07-04,BBA,SC,Active,2024,Prof. Trivedi
+NIMS-2024-0214,Kabir Mehta,2003-06-08,B.Tech AI&DS,SC,Active,2024,Prof. Singh
+NIMS-2024-0215,Diya Chatterjee,2003-05-15,BCA,OBC-NCL,Active,2024,Prof. Shukla
+NIMS-2024-0216,Khushi Patel,2004-03-24,B.Tech CSE,ST,Active,2024,Prof. Rao
+NIMS-2024-0217,Pooja Chatterjee,2003-10-19,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Rao
+NIMS-2024-0218,Meera Singh,2004-01-12,MBBS Pre-Med,ST,Active,2024,Prof. Nair
+NIMS-2024-0219,Saanvi Reddy,2004-03-04,B.Pharm,OBC-NCL,Active,2024,Prof. Patel
+NIMS-2024-0220,Vihaan Nair,2004-01-16,B.Tech AI&DS,EWS,Active,2024,Prof. Pandey
+NIMS-2024-0221,Sai Patel,2003-10-07,MBBS Pre-Med,EWS,Active,2024,Prof. Rao
+NIMS-2024-0222,Sai Yadav,2004-04-06,B.Sc Biotech,General,Active,2024,Prof. Rao
+NIMS-2024-0223,Anushka Reddy,2004-01-18,BBA,ST,Active,2024,Prof. Nair
+NIMS-2024-0224,Kabir Sharma,2003-11-23,B.Tech AI&DS,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0225,Adityaa Rathore,2004-04-28,B.Pharm,ST,Active,2024,Prof. Rathore
+NIMS-2024-0226,Sai Sharma,2003-09-20,BBA,OBC-NCL,Active,2024,Prof. Banerjee
+NIMS-2024-0227,Om Yadav,2003-11-05,B.Tech AI&DS,General,Active,2024,Prof. Pandey
+NIMS-2024-0228,Khushi Iyer,2003-03-06,B.Tech AI&DS,ST,Active,2024,Prof. Trivedi
+NIMS-2024-0229,Ishaan Rathore,2004-03-15,B.Tech CSE,EWS,Active,2024,Prof. Mehta
+NIMS-2024-0230,Avani Shukla,2003-07-10,B.Tech AI&DS,EWS,Active,2024,Prof. Jain
+NIMS-2024-0231,Sara Rao,2004-06-03,B.Tech CSE,ST,Suspended,2024,Prof. Yadav
+NIMS-2024-0232,I. Pandey,2003-09-17,B.Tech CSE,SC,Active,2024,Prof. Iyer
+NIMS-2024-0233,Aryan Jain,2004-08-18,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Patel
+NIMS-2024-0234,Aanya Mishra,2004-10-20,B.Pharm,ST,Active,2024,Prof. Jain
+NIMS-2024-0235,Krishna Gupta,2004-04-13,B.Tech CSE,SC,Active,2024,Prof. Singh
+NIMS-2024-0236,Advik Verma,2003-11-20,B.Com Hons,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0237,Dhruva Verma,2004-10-24,BBA,SC,Active,2024,Prof. Trivedi
+NIMS-2024-0238,Diya Chauhan,2003-05-08,B.Sc Biotech,ST,Active,2024,Prof. Mishra
+NIMS-2024-0239,Ishita Mishra,2003-07-11,MBBS Pre-Med,ST,Active,2024,Prof. Rao
+NIMS-2024-0240,Sai Shukla,2003-03-22,BCA,EWS,Active,2024,Prof. Chatterjee
+NIMS-2024-0241,Ananya Jain,2003-03-23,B.Sc Biotech,SC,Active,2024,Prof. Verma
+NIMS-2024-0242,Vanshika Shukla,2003-06-20,MBBS Pre-Med,SC,Active,2024,Prof. Patel
+NIMS-2024-0243,Gauri Chatterjee,2004-03-21,B.Com Hons,General,Active,2024,Prof. Trivedi
+NIMS-2024-0244,Kavya Reddy,2004-11-26,B.Pharm,General,Active,2024,Prof. Sharma
+NIMS-2024-0245,Aditya Mehta,2003-03-10,BBA,SC,Active,2024,Prof. Gupta
+NIMS-2024-0246,Avani Verma,2004-09-11,B.Pharm,ST,Active,2024,Prof. Mehta
+NIMS-2024-0247,Pooja Gupta,2004-08-10,B.Pharm,EWS,Active,2024,Prof. Nair
+NIMS-2024-0248,Ananya Chauhan,2003-09-13,B.Tech AI&DS,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0249,Sara Trivedi,2004-07-29,B.Tech AI&DS,SC,Active,2024,Prof. Shukla
+NIMS-2024-0250,Pranav Chatterjee,2003-10-20,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Gupta
+NIMS-2024-0251,Arjun Iyer,2003-06-26,MBBS Pre-Med,General,Active,2024,Prof. Gupta
+NIMS-2024-0252,Arjun Rao,2004-07-09,B.Com Hons,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0253,Kavya Reddy,2003-08-18,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Yadav
+NIMS-2024-0254,Pari Sharma,2004-01-05,B.Sc Biotech,ST,Active,2024,Prof. Pandey
+NIMS-2024-0255,Arjun Rathore,2004-02-12,MBBS Pre-Med,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0256,Avani Gupta,2003-05-09,B.Sc Biotech,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0257,Sara Pandey,2003-05-12,B.Pharm,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0258,Ayaan Reddy,2003-06-06,B.Com Hons,OBC-NCL,Active,2024,Prof. Trivedi
+NIMS-2024-0259,Kabir Pandey,2004-06-15,B.Com Hons,General,Active,2024,Prof. Trivedi
+NIMS-2024-0260,Myra Chauhan,2003-05-09,B.Com Hons,EWS,Active,2024,Prof. Chatterjee
+NIMS-2024-0261,T. Banerjee,2003-06-07,B.Pharm,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0262,Vivaan Gupta,2003-02-16,B.Com Hons,OBC-NCL,Active,2024,Prof. Rathore
+NIMS-2024-0263,Pari Rao,2003-10-24,B.Com Hons,ST,Active,2024,Prof. Chatterjee
+NIMS-2024-0264,Samarth Iyer,2003-03-16,B.Tech CSE,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0265,Meera Iyer,2003-07-28,B.Sc Biotech,EWS,Active,2024,Prof. Patel
+NIMS-2024-0266,Ananya Pandey,2004-02-13,B.Pharm,SC,Active,2024,Prof. Nair
+NIMS-2024-0267,Aryan Iyer,2003-05-06,B.Com Hons,ST,Active,2024,Prof. Iyer
+NIMS-2024-0268,Reyansh Verma,2003-10-25,BCA,EWS,Active,2024,Prof. Sharma
+NIMS-2024-0269,Shaurya Mishra,2004-08-14,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Singh
+NIMS-2024-0270,Saanvi Iyer,2004-05-25,B.Com Hons,ST,Active,2024,Prof. Reddy
+NIMS-2024-0271,Anushka Reddy,2004-04-13,BBA,OBC-NCL,Active,2024,Prof. Rathore
+NIMS-2024-0272,Vihaan Rathore,2004-05-21,MBBS Pre-Med,SC,Active,2024,Prof. Singh
+NIMS-2024-0273,Aditi Mehta,2003-09-28,B.Sc Biotech,ST,Active,2024,Prof. Verma
+NIMS-2024-0274,Anushka Verma,2004-08-06,BBA,SC,Active,2024,Prof. Chatterjee
+NIMS-2024-0275,Ishita Reddy,2004-04-06,B.Com Hons,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0276,Reyansh Trivedi,2004-01-18,B.Sc Biotech,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0277,Advik Chatterjee,2004-06-05,BCA,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0278,Aditya Mehta,2004-12-31,B.Sc Biotech,ST,Active,2024,Prof. Chatterjee
+NIMS-2024-0279,Vanshika Reddy,2003-05-24,B.Sc Biotech,EWS,Active,2024,Prof. Patel
+NIMS-2024-0280,Anushka Chatterjee,2003-11-03,B.Sc Biotech,EWS,Active,2024,Prof. Verma
+NIMS-2024-0281,Meera Sharma,2004-01-13,B.Sc Biotech,General,Active,2024,Prof. Pandey
+NIMS-2024-0282,Vivaan Chatterjee,2004-04-30,B.Com Hons,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0283,Tanvi Nair,2003-06-24,BCA,OBC-NCL,Active,2024,Prof. Sharma
+NIMS-2024-0284,Avani Jain,2003-07-15,B.Tech CSE,ST,Active,2024,Prof. Patel
+NIMS-2024-0285,Ishaan Shukla,2004-12-08,BBA,ST,Active,2024,Prof. Gupta
+NIMS-2024-0286,Krishna Reddy,2003-08-01,B.Sc Biotech,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0287,Atharva Iyer,2004-06-29,B.Sc Biotech,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0288,Khushi Nair,2003-07-16,BBA,SC,Active,2024,Prof. Pandey
+NIMS-2024-0289,Samarth Rathore,2004-12-22,BBA,ST,Active,2024,Prof. Trivedi
+NIMS-2024-0290,G. Rao,2003-10-08,B.Com Hons,General,Active,2024,Prof. Trivedi
+NIMS-2024-0291,Gauri Mehta,2003-10-25,B.Tech CSE,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0292,Pooja Chauhan,2004-05-05,BBA,OBC-NCL,Active,2024,Prof. Singh
+NIMS-2024-0293,Krishna Jain,2004-09-22,BBA,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0294,Kabir Verma,2003-04-13,BCA,SC,Active,2024,Prof. Sharma
+NIMS-2024-0295,Krishna Sharma,2004-07-17,B.Pharm,ST,Active,2024,Prof. Gupta
+NIMS-2024-0296,Advik Rathore,2003-11-25,B.Com Hons,General,Active,2024,Prof. Gupta
+NIMS-2024-0297,Aanya Verma,2003-06-29,BCA,OBC-NCL,Active,2024,Prof. Rao
+NIMS-2024-0298,Pari Patel,2003-10-24,B.Tech CSE,General,Active,2024,Prof. Rathore
+NIMS-2024-0299,Diya Rathore,2004-04-10,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Rao
+NIMS-2024-0300,Aadvik Jain,2003-12-05,B.Pharm,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0301,Aarav Mishra,2003-10-30,BBA,OBC-NCL,Active,2024,Prof. Pandey
+NIMS-2024-0302,Saanvi Mishra,2003-03-30,BCA,General,Active,2024,Prof. Pandey
+NIMS-2024-0303,Mira Mishra,2003-09-12,B.Tech CSE,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0304,Pooja Chauhan,2003-12-04,B.Com Hons,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0305,Kavya Yadav,2003-03-05,B.Tech AI&DS,ST,Active,2024,Prof. Chatterjee
+NIMS-2024-0306,Anushka Reddy,2004-12-21,B.Com Hons,General,Active,2024,Prof. Singh
+NIMS-2024-0307,Khushi Yadav,2003-08-13,B.Pharm,ST,Active,2024,Prof. Iyer
+NIMS-2024-0308,Vanshika Pandey,2004-03-01,MBBS Pre-Med,EWS,Suspended,2024,Prof. Trivedi
+NIMS-2024-0309,Vanshika Gupta,2004-06-22,MBBS Pre-Med,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0310,Avani Jain,2003-03-05,BBA,EWS,Active,2024,Prof. Sharma
+NIMS-2024-0311,Ananya Reddy,2004-03-28,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Chauhan
+NIMS-2024-0313,Avani Verma,2004-07-26,MBBS Pre-Med,SC,Active,2024,Prof. Patel
+NIMS-2024-0314,Dhruv Sharma,2003-08-12,B.Tech AI&DS,General,Active,2024,Prof. Shukla
+NIMS-2024-0315,Arjun Rao,2003-03-03,B.Tech AI&DS,ST,Active,2024,Prof. Reddy
+NIMS-2024-0316,Riya Patel,2003-05-19,BCA,SC,Active,2024,Prof. Jain
+NIMS-2024-0317,Ishita Trivedi,2003-03-24,B.Pharm,SC,Active,2024,Prof. Rao
+NIMS-2024-0318,Aanya Trivedi,2004-06-25,B.Pharm,OBC-NCL,Active,2024,Prof. Gupta
+NIMS-2024-0319,S. Iyer,2004-11-20,BCA,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0320,Aryan Iyer,2003-12-21,B.Pharm,SC,Active,2024,Prof. Rathore
+NIMS-2024-0321,Adityaa Shukla,2004-09-21,B.Tech CSE,OBC-NCL,Active,2024,Prof. Mishra
+NIMS-2024-0322,Reyansh Chatterjee,2003-02-04,MBBS Pre-Med,EWS,Active,2024,Prof. Jain
+NIMS-2024-0323,Aditya Trivedi,2004-03-25,BBA,EWS,Active,2024,Prof. Reddy
+NIMS-2024-0324,Krishna Reddy,2003-10-24,BBA,EWS,Active,2024,Prof. Chauhan
+NIMS-2024-0325,Aryan Rathore,2003-05-27,BBA,ST,Active,2024,Prof. Rao
+NIMS-2024-0326,Vihaan Rao,2004-08-28,B.Pharm,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0327,Gauri Trivedi,2004-06-21,B.Sc Biotech,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0328,Samarth Trivedi,2003-07-08,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Iyer
+NIMS-2024-0329,Ishaan Iyer,2003-03-01,BCA,ST,Active,2024,Prof. Trivedi
+NIMS-2024-0330,Aryan Chauhan,2003-07-28,B.Sc Biotech,General,Active,2024,Prof. Banerjee
+NIMS-2024-0331,Sai Rao,2003-07-15,B.Tech CSE,SC,Active,2024,Prof. Nair
+NIMS-2024-0332,Arjun Singh,2004-08-24,BBA,ST,Active,2024,Prof. Yadav
+NIMS-2024-0333,Samarth Sharma,2003-08-05,BBA,General,Active,2024,Prof. Mishra
+NIMS-2024-0334,Vanshika Singh,2004-02-11,BBA,EWS,Active,2024,Prof. Iyer
+NIMS-2024-0335,Ishita Iyer,2004-06-30,B.Sc Biotech,SC,Active,2024,Prof. Iyer
+NIMS-2024-0336,Saanvi Nair,2004-04-22,B.Tech AI&DS,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0337,Kavya Mishra,2004-02-28,B.Tech CSE,EWS,Active,2024,Prof. Sharma
+NIMS-2024-0338,Vivaan Chauhan,2004-07-20,BCA,SC,Active,2024,Prof. Nair
+NIMS-2024-0339,Diya Yadav,2004-01-24,BBA,ST,Active,2024,Prof. Jain
+NIMS-2024-0340,Pari Nair,2004-04-16,B.Pharm,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0341,Aanya Nair,2003-07-08,B.Tech CSE,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0342,Vihaan Sharma,2004-02-27,B.Pharm,OBC-NCL,Active,2024,Prof. Trivedi
+NIMS-2024-0343,Aarav Singh,2004-06-01,MBBS Pre-Med,SC,Active,2024,Prof. Yadav
+NIMS-2024-0344,Pari Sharma,2003-01-07,BCA,General,Active,2024,Prof. Yadav
+NIMS-2024-0345,Aanya Rathore,2003-01-18,BCA,OBC-NCL,Active,2024,Prof. Mishra
+NIMS-2024-0346,Sara Mehta,2003-09-04,BBA,EWS,Active,2024,Prof. Shukla
+NIMS-2024-0347,Rudra Trivedi,2003-03-22,B.Sc Biotech,ST,Active,2024,Prof. Pandey
+NIMS-2024-0348,K. Rathore,2004-12-01,B.Tech AI&DS,General,Active,2024,Prof. Reddy
+NIMS-2024-0349,Ishita Trivedi,2004-07-19,MBBS Pre-Med,General,Active,2024,Prof. Rao
+NIMS-2024-0350,Sai Nair,2004-03-20,B.Sc Biotech,EWS,Active,2024,Prof. Sharma
+NIMS-2024-0351,Kabir Singh,2004-12-09,MBBS Pre-Med,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0352,Rudra Rao,2004-07-31,B.Tech CSE,OBC-NCL,Active,2024,Prof. Yadav
+NIMS-2024-0353,Pranav Banerjee,2003-05-28,BCA,General,Active,2024,Prof. Rathore
+NIMS-2024-0354,Avani Yadav,2004-08-03,BCA,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0355,Krishna Gupta,2004-05-27,B.Sc Biotech,General,Active,2024,Prof. Trivedi
+NIMS-2024-0356,Kabir Gupta,2003-12-15,BCA,SC,Active,2024,Prof. Mishra
+NIMS-2024-0357,Puja Nair,2003-08-22,B.Sc Biotech,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0358,Atharva Banerjee,2004-11-07,BCA,General,Active,2024,Prof. Rao
+NIMS-2024-0359,Arjun Gupta,2003-10-02,B.Pharm,ST,Active,2024,Prof. Patel
+NIMS-2024-0360,Ananya Pandey,2003-04-20,B.Tech AI&DS,General,Active,2024,Prof. Nair
+NIMS-2024-0361,Kavya Chauhan,2003-04-15,B.Pharm,General,Active,2024,Prof. Mishra
+NIMS-2024-0362,Pooja Rao,2004-07-22,BCA,General,Active,2024,Prof. Pandey
+NIMS-2024-0363,Gauri Rao,2003-04-06,B.Sc Biotech,ST,Active,2024,Prof. Singh
+NIMS-2024-0364,Riya Trivedi,2003-03-28,BBA,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0365,Shaurya Mehta,2003-10-03,B.Com Hons,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0366,Arjun Patel,2004-03-21,B.Com Hons,ST,Active,2024,Prof. Patel
+NIMS-2024-0367,Arjun Pandey,2003-09-15,BBA,ST,Active,2024,Prof. Singh
+NIMS-2024-0368,Reyansh Mehta,2003-11-08,B.Tech CSE,ST,Active,2024,Prof. Nair
+NIMS-2024-0369,Diya Iyer,2003-12-09,BCA,EWS,Active,2024,Prof. Singh
+NIMS-2024-0370,Ananya Chatterjee,2004-12-12,BBA,ST,Active,2024,Prof. Yadav
+NIMS-2024-0371,Anushka Mishra,2003-10-26,MBBS Pre-Med,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0372,Ishita Chauhan,2004-02-07,B.Sc Biotech,General,Active,2024,Prof. Chauhan
+NIMS-2024-0373,Myra Sharma,2004-04-17,BBA,ST,Active,2024,Prof. Singh
+NIMS-2024-0374,Riya Nair,2003-05-23,B.Com Hons,OBC-NCL,Active,2024,Prof. Yadav
+NIMS-2024-0375,Aditi Trivedi,2003-03-17,MBBS Pre-Med,EWS,Active,2024,Prof. Singh
+NIMS-2024-0376,Aanya Reddy,2004-12-09,BCA,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0377,A. Chatterjee,2004-10-15,B.Tech AI&DS,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0378,Shaurya Chatterjee,2003-02-15,BCA,SC,Active,2024,Prof. Pandey
+NIMS-2024-0379,Aarav Jain,2003-09-22,BBA,EWS,Active,2024,Prof. Mehta
+NIMS-2024-0380,Kavya Trivedi,2004-04-19,B.Pharm,SC,Active,2024,Prof. Jain
+NIMS-2024-0381,Reyansh Rathore,2004-03-01,B.Tech AI&DS,General,Active,2024,Prof. Jain
+NIMS-2024-0382,Samarth Mishra,2004-04-11,BBA,EWS,Active,2024,Prof. Gupta
+NIMS-2024-0383,Meera Jain,2004-03-24,MBBS Pre-Med,SC,Active,2024,Prof. Nair
+NIMS-2024-0384,Adityaa Jain,2003-01-24,B.Sc Biotech,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0385,Sara Patel,2004-07-19,B.Pharm,SC,Suspended,2024,Prof. Sharma
+NIMS-2024-0386,Kabir Trivedi,2004-10-06,B.Pharm,OBC-NCL,Active,2024,Prof. Rao
+NIMS-2024-0387,Vivaan Chatterjee,2003-07-22,MBBS Pre-Med,EWS,Active,2024,Prof. Verma
+NIMS-2024-0388,Aarav Singh,2003-07-30,B.Com Hons,General,Active,2024,Prof. Nair
+NIMS-2024-0389,Kavya Mishra,2003-07-21,MBBS Pre-Med,General,Active,2024,Prof. Pandey
+NIMS-2024-0390,Sara Mishra,2004-09-03,BCA,EWS,Active,2024,Prof. Chatterjee
+NIMS-2024-0391,Gauri Pandey,2004-04-13,B.Pharm,SC,Active,2024,Prof. Mishra
+NIMS-2024-0392,Ananya Jain,2003-09-02,B.Com Hons,General,Active,2024,Prof. Nair
+NIMS-2024-0393,Ishaan Reddy,2004-02-02,BCA,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0394,Aditi Patel,2004-05-13,B.Pharm,EWS,Active,2024,Prof. Chauhan
+NIMS-2024-0395,Om Mehta,2003-07-11,B.Sc Biotech,ST,Active,2024,Prof. Nair
+NIMS-2024-0396,Arav Nair,2003-05-20,BBA,ST,Active,2024,Prof. Patel
+NIMS-2024-0397,Pari Shukla,2004-12-28,MBBS Pre-Med,ST,Active,2024,Prof. Reddy
+NIMS-2024-0398,Avani Sharma,2003-08-14,B.Com Hons,General,Active,2024,Prof. Chauhan
+NIMS-2024-0399,Aanya Rathore,2003-06-22,MBBS Pre-Med,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0400,Avani Jain,2003-10-02,B.Sc Biotech,EWS,Active,2024,Prof. Yadav
+NIMS-2024-0401,Aanya Singh,2004-03-11,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Banerjee
+NIMS-2024-0402,Puja Chauhan,2003-12-23,B.Tech AI&DS,ST,Active,2024,Prof. Mehta
+NIMS-2024-0403,Pranav Banerjee,2004-12-06,B.Sc Biotech,EWS,Active,2024,Prof. Verma
+NIMS-2024-0404,Khushi Mehta,2003-07-31,BBA,General,Active,2024,Prof. Reddy
+NIMS-2024-0405,Vanshika Rao,2004-06-21,B.Sc Biotech,SC,Active,2024,Prof. Nair
+NIMS-2024-0406,S. Jain,2003-05-19,BCA,General,Active,2024,Prof. Rao
+NIMS-2024-0407,Krishna Yadav,2003-05-30,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0408,Ishaan Banerjee,2004-10-09,B.Com Hons,ST,Active,2024,Prof. Reddy
+NIMS-2024-0409,Arjun Gupta,2004-02-17,B.Com Hons,SC,Active,2024,Prof. Pandey
+NIMS-2024-0410,Ananya Banerjee,2003-01-03,B.Tech AI&DS,ST,Active,2024,Prof. Trivedi
+NIMS-2024-0411,Aanya Trivedi,2003-08-12,BCA,OBC-NCL,Active,2024,Prof. Patel
+NIMS-2024-0412,Ananya Rathore,2003-12-12,B.Pharm,EWS,Active,2024,Prof. Iyer
+NIMS-2024-0413,Vihaan Verma,2003-04-12,MBBS Pre-Med,General,Active,2024,Prof. Jain
+NIMS-2024-0414,Puja Iyer,2003-01-01,BCA,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0415,Shaurya Chauhan,2003-04-06,B.Sc Biotech,SC,Active,2024,Prof. Iyer
+NIMS-2024-0416,Shaurya Verma,2004-02-10,B.Com Hons,OBC-NCL,Active,2024,Prof. Mishra
+NIMS-2024-0417,Reyansh Sharma,2003-08-07,MBBS Pre-Med,General,Active,2024,Prof. Sharma
+NIMS-2024-0418,Sara Iyer,2003-01-10,B.Tech CSE,SC,Active,2024,Prof. Sharma
+NIMS-2024-0419,Krishna Nair,2003-03-14,BBA,ST,Active,2024,Prof. Singh
+NIMS-2024-0420,Reyansh Mishra,2004-01-12,B.Com Hons,OBC-NCL,Active,2024,Prof. Trivedi
+NIMS-2024-0421,Ishaan Gupta,2004-06-27,B.Tech CSE,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0422,Gauri Singh,2004-10-05,B.Pharm,ST,Active,2024,Prof. Jain
+NIMS-2024-0423,Sai Jain,2003-05-24,B.Tech AI&DS,EWS,Active,2024,Prof. Mishra
+NIMS-2024-0424,Aditi Mishra,2003-05-24,BBA,SC,Active,2024,Prof. Pandey
+NIMS-2024-0425,Myra Chatterjee,2004-09-06,B.Com Hons,General,Active,2024,Prof. Chatterjee
+NIMS-2024-0426,Sara Chatterjee,2004-06-05,BBA,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0427,Aryan Nair,2004-01-31,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Patel
+NIMS-2024-0428,Sara Sharma,2004-01-05,B.Sc Biotech,OBC-NCL,Active,2024,Prof. Rao
+NIMS-2024-0429,Kavya Rao,2004-11-30,B.Pharm,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0430,Tanvi Gupta,2003-01-15,B.Com Hons,OBC-NCL,Active,2024,Prof. Yadav
+NIMS-2024-0431,Anushka Reddy,2003-10-21,BCA,ST,Active,2024,Prof. Chauhan
+NIMS-2024-0432,Aanya Rao,2004-09-22,B.Pharm,SC,Active,2024,Prof. Nair
+NIMS-2024-0433,Sai Reddy,2003-07-28,B.Pharm,EWS,Active,2024,Prof. Chatterjee
+NIMS-2024-0434,Tanvi Gupta,2003-11-14,BCA,OBC-NCL,Active,2024,Prof. Mishra
+NIMS-2024-0435,S. Shukla,2003-04-29,MBBS Pre-Med,EWS,Active,2024,Prof. Pandey
+NIMS-2024-0436,Atharva Jain,2003-01-13,B.Pharm,General,Active,2024,Prof. Patel
+NIMS-2024-0437,Gauri Reddy,2004-06-13,B.Com Hons,OBC-NCL,Active,2024,Prof. Nair
+NIMS-2024-0438,Rudra Jain,2003-01-31,B.Sc Biotech,ST,Active,2024,Prof. Shukla
+NIMS-2024-0439,Dhruv Banerjee,2004-10-04,B.Tech AI&DS,ST,Active,2024,Prof. Singh
+NIMS-2024-0440,Vihaan Nair,2004-08-03,B.Pharm,SC,Active,2024,Prof. Shukla
+NIMS-2024-0441,Reyansh Banerjee,2004-11-21,B.Tech AI&DS,OBC-NCL,Active,2024,Prof. Pandey
+NIMS-2024-0442,Aarav Yadav,2003-02-17,MBBS Pre-Med,SC,Active,2024,Prof. Pandey
+NIMS-2024-0443,Atharva Verma,2004-07-20,BCA,OBC-NCL,Active,2024,Prof. Trivedi
+NIMS-2024-0444,Rhea Mishra,2003-10-05,B.Tech AI&DS,EWS,Active,2024,Prof. Chauhan
+NIMS-2024-0445,Saanvi Verma,2003-07-03,BBA,EWS,Active,2024,Prof. Iyer
+NIMS-2024-0446,Arjun Iyer,2003-10-17,B.Com Hons,SC,Active,2024,Prof. Patel
+NIMS-2024-0447,Arav Pandey,2003-07-25,B.Com Hons,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0448,Sneha Pandey,2004-08-28,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Mehta
+NIMS-2024-0449,Aarav Shukla,2003-01-25,BBA,EWS,Active,2024,Prof. Banerjee
+NIMS-2024-0450,Diya Sharma,2004-11-04,BCA,SC,Active,2024,Prof. Yadav
+NIMS-2024-0451,Sara Yadav,2004-03-05,MBBS Pre-Med,General,Active,2024,Prof. Jain
+NIMS-2024-0452,Sai Verma,2003-08-26,BCA,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0453,Tanvi Jain,2004-06-01,B.Pharm,ST,Active,2024,Prof. Yadav
+NIMS-2024-0454,Aditi Mehta,2003-08-31,B.Com Hons,SC,Active,2024,Prof. Rao
+NIMS-2024-0455,Ananya Mishra,2004-04-08,B.Com Hons,OBC-NCL,Active,2024,Prof. Shukla
+NIMS-2024-0456,Krishna Banerjee,2003-04-22,B.Pharm,General,Active,2024,Prof. Trivedi
+NIMS-2024-0457,Sneha Mishra,2004-02-21,B.Tech AI&DS,EWS,Active,2024,Prof. Singh
+NIMS-2024-0458,Pooja Rathore,2004-04-19,B.Com Hons,General,Active,2024,Prof. Mehta
+NIMS-2024-0459,Samarth Chatterjee,2003-02-11,BBA,SC,Active,2024,Prof. Mehta
+NIMS-2024-0460,Aryan Pandey,2004-02-10,B.Tech CSE,SC,Active,2024,Prof. Nair
+NIMS-2024-0461,Vivaan Trivedi,2004-04-08,BBA,General,Active,2024,Prof. Sharma
+NIMS-2024-0462,Krishna Jain,2003-01-13,B.Tech CSE,OBC-NCL,Suspended,2024,Prof. Patel
+NIMS-2024-0463,Anushka Pandey,2004-12-03,B.Tech AI&DS,EWS,Active,2024,Prof. Shukla
+NIMS-2024-0464,V. Gupta,2003-07-22,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Nair
+NIMS-2024-0465,Ayaan Verma,2004-04-17,B.Tech CSE,OBC-NCL,Active,2024,Prof. Mehta
+NIMS-2024-0466,Pari Sharma,2004-01-27,BCA,OBC-NCL,Active,2024,Prof. Reddy
+NIMS-2024-0467,Atharva Chauhan,2003-10-14,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Rao
+NIMS-2024-0468,Om Nair,2004-02-26,MBBS Pre-Med,General,Active,2024,Prof. Mishra
+NIMS-2024-0469,Ishita Mehta,2004-03-05,BBA,EWS,Active,2024,Prof. Nair
+NIMS-2024-0470,Ishita Pandey,2004-05-06,MBBS Pre-Med,SC,Active,2024,Prof. Rathore
+NIMS-2024-0471,Rudra Patel,2003-01-27,B.Sc Biotech,EWS,Active,2024,Prof. Chauhan
+NIMS-2024-0472,Rudra Verma,2004-04-28,B.Sc Biotech,EWS,Active,2024,Prof. Rao
+NIMS-2024-0473,Reyansh Yadav,2004-11-03,BBA,SC,Active,2024,Prof. Banerjee
+NIMS-2024-0474,Avani Trivedi,2003-12-30,B.Pharm,OBC-NCL,Active,2024,Prof. Verma
+NIMS-2024-0475,Gauri Banerjee,2003-01-29,B.Sc Biotech,EWS,Active,2024,Prof. Trivedi
+NIMS-2024-0476,Pari Rao,2003-11-13,B.Pharm,ST,Active,2024,Prof. Jain
+NIMS-2024-0477,Vihaan Yadav,2004-09-08,BBA,General,Active,2024,Prof. Patel
+NIMS-2024-0478,Diya Chatterjee,2003-07-26,B.Pharm,SC,Active,2024,Prof. Verma
+NIMS-2024-0479,Vihaan Sharma,2003-06-01,B.Pharm,General,Active,2024,Prof. Singh
+NIMS-2024-0480,Kavya Trivedi,2004-08-23,B.Tech AI&DS,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0481,Krishna Patel,2004-03-23,MBBS Pre-Med,SC,Active,2024,Prof. Nair
+NIMS-2024-0482,Kabir Banerjee,2003-06-29,BCA,SC,Active,2024,Prof. Jain
+NIMS-2024-0483,Atharva Sharma,2004-12-19,BCA,EWS,Active,2024,Prof. Iyer
+NIMS-2024-0484,Vanshika Mishra,2004-09-18,BBA,EWS,Active,2024,Prof. Mishra
+NIMS-2024-0485,Ishaan Mishra,2003-03-21,BBA,SC,Active,2024,Prof. Chauhan
+NIMS-2024-0486,Sai Mishra,2004-04-02,B.Tech CSE,SC,Active,2024,Prof. Pandey
+NIMS-2024-0487,Arjun Pandey,2003-09-20,B.Tech AI&DS,General,Active,2024,Prof. Pandey
+NIMS-2024-0488,Pooja Shukla,2003-06-20,BCA,ST,Active,2024,Prof. Rao
+NIMS-2024-0489,Aanya Trivedi,2003-04-14,MBBS Pre-Med,EWS,Active,2024,Prof. Rao
+NIMS-2024-0490,Pooja Gupta,2003-02-04,B.Com Hons,General,Active,2024,Prof. Chauhan
+NIMS-2024-0491,Reyansh Gupta,2003-12-17,B.Pharm,ST,Active,2024,Prof. Pandey
+NIMS-2024-0492,Myra Gupta,2003-12-13,MBBS Pre-Med,General,Active,2024,Prof. Sharma
+NIMS-2024-0493,V. Shukla,2003-06-10,B.Tech CSE,General,Active,2024,Prof. Shukla
+NIMS-2024-0494,Advik Shukla,2004-12-14,B.Com Hons,SC,Active,2024,Prof. Jain
+NIMS-2024-0495,Reyansh Verma,2004-02-07,MBBS Pre-Med,OBC-NCL,Active,2024,Prof. Pandey
+NIMS-2024-0496,Aarav Shukla,2003-03-31,B.Com Hons,EWS,Active,2024,Prof. Chatterjee
+NIMS-2024-0497,Reyansh Sharma,2003-07-31,B.Pharm,SC,Active,2024,Prof. Singh
+NIMS-2024-0498,Ayaan Rathore,2004-02-12,MBBS Pre-Med,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0499,Aanya Trivedi,2003-07-09,B.Sc Biotech,ST,Active,2024,Prof. Banerjee
+NIMS-2024-0500,Pooja Verma,2003-09-27,MBBS Pre-Med,ST,Active,2024,Prof. Rao

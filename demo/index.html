@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerifyGrid — Deterministic Multi-Source Institutional Verification</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-indigo-900 text-indigo-100 text-xs py-2 px-4 border-b border-indigo-800 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <span class="bg-indigo-500/30 text-indigo-200 px-2 py-0.5 rounded font-mono font-semibold">NIMS Ideathon 2026</span>
+      <span>Concept Rank: <strong class="text-white">#1 (Score 8.6/10)</strong> &middot; Verified Institutional Wedge Demo</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <span class="flex items-center"><i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1 text-emerald-400"></i> Deterministic Engine</span>
+      <span class="flex items-center"><i data-lucide="zap" class="w-3.5 h-3.5 mr-1 text-amber-400"></i> AI Mapping Blueprint</span>
+      <a href="https://github.com/Yashjain329/VerifyGrid" target="_blank" class="hover:text-white underline font-medium flex items-center">
+        <i data-lucide="github" class="w-3.5 h-3.5 mr-1"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-200">
+          <i data-lucide="layout-grid" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-xl font-extrabold text-slate-900 tracking-tight">VerifyGrid</h1>
+            <span class="text-[10px] font-bold px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full">v1.0 MVP</span>
+          </div>
+          <p class="text-xs text-slate-500">Autonomous Multi-Source Reconciliation & Exception Sign-Off</p>
+        </div>
+      </div>
+
+      <!-- Workflow Tabs -->
+      <nav class="flex items-center space-x-1 bg-slate-100 p-1 rounded-lg border border-slate-200">
+        <button onclick="switchTab('tab-upload')" id="nav-upload" class="tab-btn px-3 py-1.5 text-xs font-semibold rounded-md transition-all bg-white text-indigo-700 shadow-sm flex items-center space-x-1.5">
+          <i data-lucide="upload-cloud" class="w-4 h-4"></i>
+          <span>1. Ingestion</span>
+        </button>
+        <button onclick="switchTab('tab-blueprint')" id="nav-blueprint" class="tab-btn px-3 py-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 rounded-md transition-all flex items-center space-x-1.5">
+          <i data-lucide="git-merge" class="w-4 h-4"></i>
+          <span>2. Blueprint</span>
+        </button>
+        <button onclick="switchTab('tab-rules')" id="nav-rules" class="tab-btn px-3 py-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 rounded-md transition-all flex items-center space-x-1.5">
+          <i data-lucide="sliders" class="w-4 h-4"></i>
+          <span>3. Rules Engine</span>
+        </button>
+        <button onclick="switchTab('tab-grid')" id="nav-grid" class="tab-btn px-3 py-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 rounded-md transition-all flex items-center space-x-1.5">
+          <i data-lucide="table" class="w-4 h-4"></i>
+          <span>4. Exception Grid</span>
+        </button>
+        <button onclick="switchTab('tab-audit')" id="nav-audit" class="tab-btn px-3 py-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 rounded-md transition-all flex items-center space-x-1.5">
+          <i data-lucide="stamp" class="w-4 h-4"></i>
+          <span>5. Audit & Sign-off</span>
+        </button>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center space-x-2">
+        <button onclick="loadSampleData()" class="inline-flex items-center px-3 py-1.5 border border-indigo-200 text-xs font-semibold rounded-lg text-indigo-700 bg-indigo-50 hover:bg-indigo-100 transition shadow-sm">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 mr-1.5 text-indigo-600"></i>
+          Load NIMS Sample (500 Rows)
+        </button>
+        <button onclick="runVerification()" id="btn-run" class="inline-flex items-center px-4 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-lg shadow-sm shadow-indigo-300 transition">
+          <i data-lucide="play" class="w-3.5 h-3.5 mr-1.5"></i>
+          Execute Verification
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- KPI Ribbon -->
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-3 mb-6">
+      <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <span class="text-xs text-slate-500 font-medium flex items-center justify-between">
+          Total Sources
+          <i data-lucide="files" class="w-4 h-4 text-slate-400"></i>
+        </span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-xl font-bold text-slate-900" id="kpi-total">500</span>
+          <span class="text-[10px] font-semibold text-slate-400">Records</span>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-xl border border-emerald-200 bg-emerald-50/20 shadow-sm flex flex-col justify-between">
+        <span class="text-xs text-emerald-700 font-medium flex items-center justify-between">
+          Auto-Verified
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+        </span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-xl font-bold text-emerald-700" id="kpi-verified">456</span>
+          <span class="text-[10px] font-bold text-emerald-600" id="kpi-verified-pct">91.2%</span>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-xl border border-amber-200 bg-amber-50/20 shadow-sm flex flex-col justify-between">
+        <span class="text-xs text-amber-700 font-medium flex items-center justify-between">
+          Needs Review
+          <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-500"></i>
+        </span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-xl font-bold text-amber-700" id="kpi-review">24</span>
+          <span class="text-[10px] font-bold text-amber-600">Review Band</span>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-xl border border-rose-200 bg-rose-50/20 shadow-sm flex flex-col justify-between">
+        <span class="text-xs text-rose-700 font-medium flex items-center justify-between">
+          Hard Mismatches
+          <i data-lucide="x-circle" class="w-4 h-4 text-rose-500"></i>
+        </span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-xl font-bold text-rose-700" id="kpi-mismatch">16</span>
+          <span class="text-[10px] font-bold text-rose-600">Failed Rules</span>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-xl border border-purple-200 bg-purple-50/20 shadow-sm flex flex-col justify-between">
+        <span class="text-xs text-purple-700 font-medium flex items-center justify-between">
+          Missing in Sources
+          <i data-lucide="help-circle" class="w-4 h-4 text-purple-500"></i>
+        </span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-xl font-bold text-purple-700" id="kpi-missing">4</span>
+          <span class="text-[10px] font-bold text-purple-600">Orphaned</span>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-xl border border-indigo-200 bg-indigo-50/30 shadow-sm flex flex-col justify-between">
+        <span class="text-xs text-indigo-700 font-medium flex items-center justify-between">
+          Manual Time Saved
+          <i data-lucide="clock" class="w-4 h-4 text-indigo-500"></i>
+        </span>
+        <div class="mt-2 flex items-baseline justify-between">
+          <span class="text-xl font-bold text-indigo-900">~21 hrs</span>
+          <span class="text-[10px] font-bold text-indigo-600">vs 0.4s run</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 1: INGESTION -->
+    <div id="tab-upload" class="tab-content block space-y-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Step 1: Ingestion & Multi-Source Profiling</h2>
+            <p class="text-xs text-slate-500 mt-1">Upload messy CSV / XLSX exports from student portals, university ERPs, or accounting ledgers.</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full font-mono">Format: CSV / XLSX / PDF-Table</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Source A -->
+          <div class="border-2 border-dashed border-indigo-200 bg-indigo-50/20 hover:bg-indigo-50/40 rounded-xl p-5 text-center transition cursor-pointer relative">
+            <input type="file" id="file-a" class="absolute inset-0 opacity-0 cursor-pointer" onchange="handleFileUpload(event, 'A')">
+            <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 mx-auto flex items-center justify-center mb-3">
+              <i data-lucide="file-spreadsheet" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-slate-800">Source A: Applicants</h3>
+            <p class="text-xs text-slate-500 mt-1">Portal submission export (Scholarship list)</p>
+            <div class="mt-3 text-[11px] font-mono text-indigo-600 bg-indigo-50 px-2 py-1 rounded inline-block" id="status-source-a">
+              Loaded: scholarship_applicants.csv (500 rows)
+            </div>
+          </div>
+
+          <!-- Source B -->
+          <div class="border-2 border-dashed border-emerald-200 bg-emerald-50/20 hover:bg-emerald-50/40 rounded-xl p-5 text-center transition cursor-pointer relative">
+            <input type="file" id="file-b" class="absolute inset-0 opacity-0 cursor-pointer" onchange="handleFileUpload(event, 'B')">
+            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-3">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-slate-800">Source B: Registrar ERP</h3>
+            <p class="text-xs text-slate-500 mt-1">Official University Student Registry</p>
+            <div class="mt-3 text-[11px] font-mono text-emerald-600 bg-emerald-50 px-2 py-1 rounded inline-block" id="status-source-b">
+              Loaded: university_admissions.csv (496 rows)
+            </div>
+          </div>
+
+          <!-- Source C -->
+          <div class="border-2 border-dashed border-amber-200 bg-amber-50/20 hover:bg-amber-50/40 rounded-xl p-5 text-center transition cursor-pointer relative">
+            <input type="file" id="file-c" class="absolute inset-0 opacity-0 cursor-pointer" onchange="handleFileUpload(event, 'C')">
+            <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 mx-auto flex items-center justify-center mb-3">
+              <i data-lucide="receipt" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-sm font-bold text-slate-800">Source C: Accounts Ledger</h3>
+            <p class="text-xs text-slate-500 mt-1">Finance Fee Receipts & Payment Gateway</p>
+            <div class="mt-3 text-[11px] font-mono text-amber-600 bg-amber-50 px-2 py-1 rounded inline-block" id="status-source-c">
+              Loaded: fee_receipts.csv (494 rows)
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 border-t border-slate-100 pt-5 flex items-center justify-between">
+          <div class="flex items-center space-x-2 text-xs text-slate-500">
+            <i data-lucide="info" class="w-4 h-4 text-slate-400"></i>
+            <span>Privacy Guard: Candidate PII is masked; strict DPDP Act compliance applied.</span>
+          </div>
+          <button onclick="switchTab('tab-blueprint')" class="px-4 py-2 bg-slate-900 text-white text-xs font-semibold rounded-lg hover:bg-slate-800 transition flex items-center">
+            Proceed to Blueprint Mapping <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: BLUEPRINT -->
+    <div id="tab-blueprint" class="tab-content hidden space-y-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Step 2: AI Blueprint & Column Mapping</h2>
+            <p class="text-xs text-slate-500 mt-1">AI identifies join keys, normalizes column semantics, and drafts the cross-source verification layout.</p>
+          </div>
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+            <i data-lucide="check" class="w-3 h-3 mr-1"></i> Auto-Mapping Confidence: 99.4%
+          </span>
+        </div>
+
+        <!-- Join Key Card -->
+        <div class="bg-indigo-50/50 border border-indigo-200 rounded-xl p-4 mb-6">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center">
+                <i data-lucide="key" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-indigo-950 uppercase tracking-wide">Primary Join Key Candidate</h4>
+                <p class="text-sm font-semibold text-indigo-900">Institutional Roll Number <span class="text-xs font-normal text-indigo-700">(Alphanumeric Pattern: NIMS-YYYY-XXXX)</span></p>
+              </div>
+            </div>
+            <span class="text-xs font-mono bg-white px-2.5 py-1 rounded-md border border-indigo-200 text-indigo-700 font-semibold">
+              Cleaner: Regex ^[A-Z0-9]+$ + Trim
+            </span>
+          </div>
+        </div>
+
+        <!-- Schema Mapping Table -->
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="min-w-full divide-y divide-slate-200 text-xs">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 text-left font-semibold text-slate-600">Verification Target</th>
+                <th class="px-4 py-3 text-left font-semibold text-indigo-700">Source A (Applicants)</th>
+                <th class="px-4 py-3 text-left font-semibold text-emerald-700">Source B (Admissions ERP)</th>
+                <th class="px-4 py-3 text-left font-semibold text-amber-700">Source C (Accounts)</th>
+                <th class="px-4 py-3 text-left font-semibold text-slate-600">Transformation / Normalizer</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 bg-white">
+              <tr>
+                <td class="px-4 py-3 font-bold text-slate-900">Student Identity</td>
+                <td class="px-4 py-3 font-mono text-indigo-600">student_roll_no</td>
+                <td class="px-4 py-3 font-mono text-emerald-600">enrollment_number</td>
+                <td class="px-4 py-3 font-mono text-amber-600">student_roll_no</td>
+                <td class="px-4 py-3 text-slate-600">Strip spaces, hyphens, uppercase</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-bold text-slate-900">Student Name</td>
+                <td class="px-4 py-3 font-mono text-indigo-600">candidate_name</td>
+                <td class="px-4 py-3 font-mono text-emerald-600">student_full_name</td>
+                <td class="px-4 py-3 text-slate-400">&mdash;</td>
+                <td class="px-4 py-3 text-slate-600">Fuzzy Levenshtein + Transliteration tolerance</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-bold text-slate-900">Date of Birth</td>
+                <td class="px-4 py-3 font-mono text-indigo-600">date_of_birth</td>
+                <td class="px-4 py-3 font-mono text-emerald-600">registered_dob</td>
+                <td class="px-4 py-3 text-slate-400">&mdash;</td>
+                <td class="px-4 py-3 text-slate-600">Multi-format date parser &rarr; YYYY-MM-DD</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-bold text-slate-900">Tuition Fee Status</td>
+                <td class="px-4 py-3 font-mono text-indigo-600">claimed_scholarship_inr</td>
+                <td class="px-4 py-3 text-slate-400">&mdash;</td>
+                <td class="px-4 py-3 font-mono text-amber-600">accounts_clearance_status</td>
+                <td class="px-4 py-3 text-slate-600">Status == CLEARED &amp;&amp; paid &gt;= due</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-6 flex justify-between">
+          <button onclick="switchTab('tab-upload')" class="px-4 py-2 border border-slate-200 text-slate-600 text-xs font-semibold rounded-lg hover:bg-slate-50 transition">
+            &larr; Back to Upload
+          </button>
+          <button onclick="switchTab('tab-rules')" class="px-4 py-2 bg-slate-900 text-white text-xs font-semibold rounded-lg hover:bg-slate-800 transition flex items-center">
+            Confirm &amp; Proceed to Rules <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: RULES ENGINE -->
+    <div id="tab-rules" class="tab-content hidden space-y-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Step 3: Deterministic Rulebook Specification</h2>
+            <p class="text-xs text-slate-500 mt-1">Plain-English rules compiled into deterministic tests. No hidden LLM hallucinations; strict mathematical evaluation.</p>
+          </div>
+          <span class="text-xs font-mono bg-indigo-50 text-indigo-700 px-3 py-1 rounded-md border border-indigo-200 font-semibold">
+            4 Rules Active
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Rule 1 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">RULE_01</span>
+              <span class="text-[10px] font-semibold text-slate-500">EXACT KEY LOOKUP</span>
+            </div>
+            <h4 class="text-sm font-bold text-slate-800">Enrollment Exists in Admissions</h4>
+            <p class="text-xs text-slate-600 mt-1">The student's normalized Roll Number in Source A must exist as an active enrollment in Source B.</p>
+            <div class="mt-3 text-[11px] font-mono text-slate-500 bg-white p-2 rounded border border-slate-200">
+              IF NOT EXISTS(B.enrollment_number == A.roll_no) &rarr; <span class="text-rose-600 font-bold">MISSING</span>
+            </div>
+          </div>
+
+          <!-- Rule 2 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">RULE_02</span>
+              <span class="text-[10px] font-semibold text-amber-600">FUZZY NAME WITH REVIEW BAND</span>
+            </div>
+            <h4 class="text-sm font-bold text-slate-800">Candidate Name Consistency</h4>
+            <p class="text-xs text-slate-600 mt-1">Compares Candidate Name against Registered Name. Uses Levenshtein metric with transliteration allowance.</p>
+            <div class="mt-3 text-[11px] font-mono text-slate-500 bg-white p-2 rounded border border-slate-200">
+              Score &ge; 92%: <span class="text-emerald-600 font-bold">PASS</span> | 75% - 91%: <span class="text-amber-600 font-bold">NEEDS_REVIEW</span> | &lt; 75%: <span class="text-rose-600 font-bold">MISMATCH</span>
+            </div>
+          </div>
+
+          <!-- Rule 3 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">RULE_03</span>
+              <span class="text-[10px] font-semibold text-slate-500">DATE NORMALIZATION</span>
+            </div>
+            <h4 class="text-sm font-bold text-slate-800">Date of Birth Verification</h4>
+            <p class="text-xs text-slate-600 mt-1">Parses DD/MM/YYYY, YYYY-MM-DD, DD-MM-YYYY styles into ISO dates and asserts exact match.</p>
+            <div class="mt-3 text-[11px] font-mono text-slate-500 bg-white p-2 rounded border border-slate-200">
+              PARSE(A.dob) == PARSE(B.dob) &rarr; <span class="text-emerald-600 font-bold">PASS</span> | ELSE &rarr; <span class="text-rose-600 font-bold">MISMATCH</span>
+            </div>
+          </div>
+
+          <!-- Rule 4 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">RULE_04</span>
+              <span class="text-[10px] font-semibold text-slate-500">FINANCIAL INTEGRITY</span>
+            </div>
+            <h4 class="text-sm font-bold text-slate-800">Tuition Fee Clearance Check</h4>
+            <p class="text-xs text-slate-600 mt-1">Accounts Ledger must show cleared receipt where amount paid meets or exceeds total tuition due.</p>
+            <div class="mt-3 text-[11px] font-mono text-slate-500 bg-white p-2 rounded border border-slate-200">
+              IF C.status == 'CLEARED' &amp; C.paid &ge; C.due &rarr; <span class="text-emerald-600 font-bold">PASS</span> | Partial &rarr; <span class="text-amber-600 font-bold">NEEDS_REVIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 flex justify-between">
+          <button onclick="switchTab('tab-blueprint')" class="px-4 py-2 border border-slate-200 text-slate-600 text-xs font-semibold rounded-lg hover:bg-slate-50 transition">
+            &larr; Back to Blueprint
+          </button>
+          <button onclick="switchTab('tab-grid')" class="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 shadow-sm transition flex items-center">
+            Run &amp; View Verification Grid <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: EXCEPTION GRID (THE HERO DEMO) -->
+    <div id="tab-grid" class="tab-content hidden space-y-4">
+      <!-- Filter Toolbar -->
+      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div class="flex items-center flex-wrap gap-2">
+          <button onclick="setFilter('ALL')" id="filter-ALL" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-white transition">
+            All Records (500)
+          </button>
+          <button onclick="setFilter('EXCEPTIONS')" id="filter-EXCEPTIONS" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-100 text-amber-900 hover:bg-amber-200 transition flex items-center">
+            <i data-lucide="alert-circle" class="w-3.5 h-3.5 mr-1 text-amber-700"></i>
+            Exceptions Only (<span id="btn-count-exceptions">44</span>)
+          </button>
+          <button onclick="setFilter('NEEDS_REVIEW')" id="filter-NEEDS_REVIEW" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            Needs Review (24)
+          </button>
+          <button onclick="setFilter('MISMATCH')" id="filter-MISMATCH" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            Hard Mismatch (16)
+          </button>
+          <button onclick="setFilter('MISSING')" id="filter-MISSING" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            Missing (4)
+          </button>
+          <button onclick="setFilter('VERIFIED')" id="filter-VERIFIED" class="filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+            Verified (456)
+          </button>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <div class="relative">
+            <i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-slate-400"></i>
+            <input type="text" id="grid-search" oninput="handleSearch(this.value)" placeholder="Search roll, name, dept..." class="pl-9 pr-3 py-1.5 border border-slate-200 rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-indigo-500 w-56">
+          </div>
+          <button onclick="exportToCSV()" class="px-3 py-1.5 border border-slate-200 text-slate-700 hover:bg-slate-50 text-xs font-semibold rounded-lg transition flex items-center">
+            <i data-lucide="download" class="w-3.5 h-3.5 mr-1"></i> Export
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Table Container -->
+      <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto max-h-[620px] custom-scrollbar">
+          <table class="min-w-full divide-y divide-slate-200 text-xs text-left" id="verification-table">
+            <thead class="bg-slate-50 sticky top-0 z-10 text-slate-600 font-semibold uppercase tracking-wider text-[11px]">
+              <tr>
+                <th class="px-4 py-3">Roll Number</th>
+                <th class="px-4 py-3">Candidate (Source A)</th>
+                <th class="px-4 py-3">ERP Record (Source B)</th>
+                <th class="px-4 py-3 text-center">Status</th>
+                <th class="px-4 py-3">Evaluated Rules</th>
+                <th class="px-4 py-3">Audit Reason</th>
+                <th class="px-4 py-3 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="grid-body" class="divide-y divide-slate-100 bg-white font-normal">
+              <!-- Dynamically populated by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: AUDIT TRAIL & SIGN-OFF -->
+    <div id="tab-audit" class="tab-content hidden space-y-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Step 5: Reviewer Sign-Off &amp; Immutable Audit Trail</h2>
+            <p class="text-xs text-slate-500 mt-1">Every verification execution, human override, and auditor note is cryptographically signed and logged.</p>
+          </div>
+          <button onclick="downloadAuditCertificate()" class="px-3 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 transition flex items-center">
+            <i data-lucide="file-check" class="w-3.5 h-3.5 mr-1.5"></i> Download Verification Certificate
+          </button>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono text-xs text-slate-700 space-y-2" id="audit-log-container">
+          <div class="text-slate-400">// Audit Trail Initialized: NIMS Verification Batch 2024-SCHOLARSHIP-01</div>
+          <div class="text-emerald-700">✓ [2026-10-03 22:51:24] Ingested 3 sources: Applicants (500), ERP (496), Ledger (494).</div>
+          <div class="text-indigo-700">✓ [2026-10-03 22:51:25] AI Blueprint compiled: JoinKey='normalized_roll', 4 deterministic rules active.</div>
+          <div class="text-slate-800">✓ [2026-10-03 22:51:26] Automated batch verification completed in 420ms: 456 Verified, 44 Exceptions flagged.</div>
+          <div id="dynamic-audit-entries">
+            <!-- Dynamically appended decisions -->
+          </div>
+        </div>
+
+        <div class="mt-6 border-t border-slate-100 pt-5">
+          <h3 class="text-sm font-bold text-slate-800 mb-2">Reusable Verification Recipe</h3>
+          <p class="text-xs text-slate-500 mb-3">Save this exact configuration (sources, mapping, rules, threshold bands) to re-run next semester in one click.</p>
+          <div class="flex items-center space-x-3">
+            <input type="text" readonly value="recipe_nims_scholarship_v1.verifygrid.json" class="bg-slate-100 border border-slate-200 text-slate-700 text-xs px-3 py-2 rounded-lg font-mono flex-1">
+            <button onclick="alert('Recipe saved! You can trigger this exact verification next semester via CLI or Webhook.')" class="px-4 py-2 border border-slate-300 text-slate-700 hover:bg-slate-50 text-xs font-semibold rounded-lg transition">
+              Save Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- DIFF & SIGN-OFF MODAL -->
+  <div id="diff-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full border border-slate-200 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <!-- Modal Header -->
+      <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex items-center justify-between">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">Side-by-Side Exception Inspector</span>
+          <h3 class="text-base font-bold text-slate-900 mt-1" id="modal-title">Verification Record Detail</h3>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 p-1 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-5 custom-scrollbar flex-1">
+        <!-- Reason Banner -->
+        <div id="modal-banner" class="p-3.5 rounded-xl border text-xs"></div>
+
+        <!-- 3 Sources Side-by-Side Comparison -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Multi-Source Values Comparison</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+            <!-- Source A -->
+            <div class="border border-indigo-200 rounded-xl p-3 bg-indigo-50/30">
+              <span class="font-bold text-indigo-900 flex items-center mb-2">
+                <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1 text-indigo-600"></i> Source A (Applicant)
+              </span>
+              <div class="space-y-1.5" id="modal-source-a"></div>
+            </div>
+            <!-- Source B -->
+            <div class="border border-emerald-200 rounded-xl p-3 bg-emerald-50/30">
+              <span class="font-bold text-emerald-900 flex items-center mb-2">
+                <i data-lucide="database" class="w-3.5 h-3.5 mr-1 text-emerald-600"></i> Source B (Registrar ERP)
+              </span>
+              <div class="space-y-1.5" id="modal-source-b"></div>
+            </div>
+            <!-- Source C -->
+            <div class="border border-amber-200 rounded-xl p-3 bg-amber-50/30">
+              <span class="font-bold text-amber-900 flex items-center mb-2">
+                <i data-lucide="receipt" class="w-3.5 h-3.5 mr-1 text-amber-600"></i> Source C (Accounts)
+              </span>
+              <div class="space-y-1.5" id="modal-source-c"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decision Form -->
+        <div class="border-t border-slate-200 pt-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Human Verifier Decision</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 mb-1">Decision</label>
+              <select id="modal-decision" class="w-full border border-slate-200 rounded-lg p-2 text-xs focus:ring-2 focus:ring-indigo-500">
+                <option value="APPROVED_OVERRIDE">Approve (Valid Name Alias / Resolved)</option>
+                <option value="REJECTED">Reject (Fraudulent / Ineligible)</option>
+                <option value="PENDING_STUDENT">Flag for Student Clarification</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-slate-600 mb-1">Verifier Staff Role</label>
+              <select id="modal-verifier" class="w-full border border-slate-200 rounded-lg p-2 text-xs focus:ring-2 focus:ring-indigo-500">
+                <option value="Yash Jain (Scholarship Cell Officer)">Yash Jain (Scholarship Cell Officer)</option>
+                <option value="Rakesh Sharma (Assistant Registrar)">Rakesh Sharma (Assistant Registrar)</option>
+                <option value="Accounts Auditor (Finance Desk)">Accounts Auditor (Finance Desk)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Auditor Sign-off Notes / Justification</label>
+            <input type="text" id="modal-notes" placeholder="e.g., Verified 10th marksheet; spelling variation accepted per Gazette rule." class="w-full border border-slate-200 rounded-lg p-2 text-xs focus:ring-2 focus:ring-indigo-500">
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-slate-50 px-6 py-3 border-t border-slate-200 flex justify-end space-x-2">
+        <button onclick="closeModal()" class="px-4 py-2 border border-slate-200 text-slate-600 text-xs font-semibold rounded-lg hover:bg-slate-100 transition">
+          Cancel
+        </button>
+        <button onclick="saveModalDecision()" class="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-lg hover:bg-indigo-700 shadow-sm transition">
+          Sign &amp; Commit Decision
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <span>VerifyGrid &copy; 2026 &middot; Built for NIMS University Ideathon &middot; Institutional Data Reconciliation</span>
+      <span class="mt-2 md:mt-0 font-mono text-[11px] text-slate-400">Deterministic Engine &middot; Exception Queue Workflow &middot; Human-in-the-Loop</span>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
